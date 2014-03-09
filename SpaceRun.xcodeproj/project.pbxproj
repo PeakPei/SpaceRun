@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1B3DED18CC2295006839B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DEC18CC2295006839B4 /* Foundation.framework */; };
+		6B1B3DEF18CC2295006839B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DEE18CC2295006839B4 /* CoreGraphics.framework */; };
+		6B1B3DF118CC2295006839B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DF018CC2295006839B4 /* UIKit.framework */; };
+		6B1B3DF318CC2295006839B4 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DF218CC2295006839B4 /* SpriteKit.framework */; };
+		6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3DF718CC2295006839B4 /* InfoPlist.strings */; };
+		6B1B3DFB18CC2295006839B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3DFA18CC2295006839B4 /* main.m */; };
+		6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */; };
+		6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0018CC2295006839B4 /* Main.storyboard */; };
+		6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0418CC2295006839B4 /* RCWViewController.m */; };
+		6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0718CC2295006839B4 /* RCWMyScene.m */; };
+		6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0918CC2295006839B4 /* Spaceship.png */; };
+		6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0B18CC2295006839B4 /* Images.xcassets */; };
+		6B1B3E1318CC2295006839B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3E1218CC2295006839B4 /* XCTest.framework */; };
+		6B1B3E1418CC2295006839B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DEC18CC2295006839B4 /* Foundation.framework */; };
+		6B1B3E1518CC2295006839B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DF018CC2295006839B4 /* UIKit.framework */; };
+		6B1B3E1D18CC2295006839B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E1B18CC2295006839B4 /* InfoPlist.strings */; };
+		6B1B3E1F18CC2295006839B4 /* SpaceRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E1E18CC2295006839B4 /* SpaceRunTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B1B3E1618CC2295006839B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1B3DE118CC2295006839B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1B3DE818CC2295006839B4;
+			remoteInfo = SpaceRun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B1B3DE918CC2295006839B4 /* SpaceRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B3DEC18CC2295006839B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B1B3DEE18CC2295006839B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B1B3DF018CC2295006839B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B1B3DF218CC2295006839B4 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		6B1B3DF618CC2295006839B4 /* SpaceRun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRun-Info.plist"; sourceTree = "<group>"; };
+		6B1B3DF818CC2295006839B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B1B3DFA18CC2295006839B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B1B3DFC18CC2295006839B4 /* SpaceRun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceRun-Prefix.pch"; sourceTree = "<group>"; };
+		6B1B3DFD18CC2295006839B4 /* RCWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWAppDelegate.h; sourceTree = "<group>"; };
+		6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWAppDelegate.m; sourceTree = "<group>"; };
+		6B1B3E0118CC2295006839B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B1B3E0318CC2295006839B4 /* RCWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWViewController.h; sourceTree = "<group>"; };
+		6B1B3E0418CC2295006839B4 /* RCWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWViewController.m; sourceTree = "<group>"; };
+		6B1B3E0618CC2295006839B4 /* RCWMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWMyScene.h; sourceTree = "<group>"; };
+		6B1B3E0718CC2295006839B4 /* RCWMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWMyScene.m; sourceTree = "<group>"; };
+		6B1B3E0918CC2295006839B4 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		6B1B3E0B18CC2295006839B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6B1B3E1118CC2295006839B4 /* SpaceRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1B3E1218CC2295006839B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6B1B3E1A18CC2295006839B4 /* SpaceRunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRunTests-Info.plist"; sourceTree = "<group>"; };
+		6B1B3E1C18CC2295006839B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B1B3E1E18CC2295006839B4 /* SpaceRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceRunTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1B3DE618CC2295006839B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3DEF18CC2295006839B4 /* CoreGraphics.framework in Frameworks */,
+				6B1B3DF118CC2295006839B4 /* UIKit.framework in Frameworks */,
+				6B1B3DF318CC2295006839B4 /* SpriteKit.framework in Frameworks */,
+				6B1B3DED18CC2295006839B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1B3E0E18CC2295006839B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3E1318CC2295006839B4 /* XCTest.framework in Frameworks */,
+				6B1B3E1518CC2295006839B4 /* UIKit.framework in Frameworks */,
+				6B1B3E1418CC2295006839B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1B3DE018CC2295006839B4 = {
+			isa = PBXGroup;
+			children = (
+				6B1B3DF418CC2295006839B4 /* SpaceRun */,
+				6B1B3E1818CC2295006839B4 /* SpaceRunTests */,
+				6B1B3DEB18CC2295006839B4 /* Frameworks */,
+				6B1B3DEA18CC2295006839B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1B3DEA18CC2295006839B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3DE918CC2295006839B4 /* SpaceRun.app */,
+				6B1B3E1118CC2295006839B4 /* SpaceRunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1B3DEB18CC2295006839B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3DEC18CC2295006839B4 /* Foundation.framework */,
+				6B1B3DEE18CC2295006839B4 /* CoreGraphics.framework */,
+				6B1B3DF018CC2295006839B4 /* UIKit.framework */,
+				6B1B3DF218CC2295006839B4 /* SpriteKit.framework */,
+				6B1B3E1218CC2295006839B4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B1B3DF418CC2295006839B4 /* SpaceRun */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3DFD18CC2295006839B4 /* RCWAppDelegate.h */,
+				6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */,
+				6B1B3E0018CC2295006839B4 /* Main.storyboard */,
+				6B1B3E0318CC2295006839B4 /* RCWViewController.h */,
+				6B1B3E0418CC2295006839B4 /* RCWViewController.m */,
+				6B1B3E0618CC2295006839B4 /* RCWMyScene.h */,
+				6B1B3E0718CC2295006839B4 /* RCWMyScene.m */,
+				6B1B3E0918CC2295006839B4 /* Spaceship.png */,
+				6B1B3E0B18CC2295006839B4 /* Images.xcassets */,
+				6B1B3DF518CC2295006839B4 /* Supporting Files */,
+			);
+			path = SpaceRun;
+			sourceTree = "<group>";
+		};
+		6B1B3DF518CC2295006839B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3DF618CC2295006839B4 /* SpaceRun-Info.plist */,
+				6B1B3DF718CC2295006839B4 /* InfoPlist.strings */,
+				6B1B3DFA18CC2295006839B4 /* main.m */,
+				6B1B3DFC18CC2295006839B4 /* SpaceRun-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B1B3E1818CC2295006839B4 /* SpaceRunTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3E1E18CC2295006839B4 /* SpaceRunTests.m */,
+				6B1B3E1918CC2295006839B4 /* Supporting Files */,
+			);
+			path = SpaceRunTests;
+			sourceTree = "<group>";
+		};
+		6B1B3E1918CC2295006839B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B3E1A18CC2295006839B4 /* SpaceRunTests-Info.plist */,
+				6B1B3E1B18CC2295006839B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1B3DE818CC2295006839B4 /* SpaceRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B3E2218CC2295006839B4 /* Build configuration list for PBXNativeTarget "SpaceRun" */;
+			buildPhases = (
+				6B1B3DE518CC2295006839B4 /* Sources */,
+				6B1B3DE618CC2295006839B4 /* Frameworks */,
+				6B1B3DE718CC2295006839B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceRun;
+			productName = SpaceRun;
+			productReference = 6B1B3DE918CC2295006839B4 /* SpaceRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B1B3E1018CC2295006839B4 /* SpaceRunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1B3E2518CC2295006839B4 /* Build configuration list for PBXNativeTarget "SpaceRunTests" */;
+			buildPhases = (
+				6B1B3E0D18CC2295006839B4 /* Sources */,
+				6B1B3E0E18CC2295006839B4 /* Frameworks */,
+				6B1B3E0F18CC2295006839B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1B3E1718CC2295006839B4 /* PBXTargetDependency */,
+			);
+			name = SpaceRunTests;
+			productName = SpaceRunTests;
+			productReference = 6B1B3E1118CC2295006839B4 /* SpaceRunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1B3DE118CC2295006839B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCW;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vluxe;
+				TargetAttributes = {
+					6B1B3E1018CC2295006839B4 = {
+						TestTargetID = 6B1B3DE818CC2295006839B4;
+					};
+				};
+			};
+			buildConfigurationList = 6B1B3DE418CC2295006839B4 /* Build configuration list for PBXProject "SpaceRun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B1B3DE018CC2295006839B4;
+			productRefGroup = 6B1B3DEA18CC2295006839B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B1B3DE818CC2295006839B4 /* SpaceRun */,
+				6B1B3E1018CC2295006839B4 /* SpaceRunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1B3DE718CC2295006839B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */,
+				6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */,
+				6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */,
+				6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1B3E0F18CC2295006839B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3E1D18CC2295006839B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1B3DE518CC2295006839B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3DFB18CC2295006839B4 /* main.m in Sources */,
+				6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */,
+				6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */,
+				6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1B3E0D18CC2295006839B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1B3E1F18CC2295006839B4 /* SpaceRunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1B3E1718CC2295006839B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B1B3DE818CC2295006839B4 /* SpaceRun */;
+			targetProxy = 6B1B3E1618CC2295006839B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B1B3DF718CC2295006839B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B3DF818CC2295006839B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B1B3E0018CC2295006839B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B3E0118CC2295006839B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1B3E1B18CC2295006839B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1B3E1C18CC2295006839B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1B3E2018CC2295006839B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B1B3E2118CC2295006839B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B1B3E2318CC2295006839B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceRun/SpaceRun-Prefix.pch";
+				INFOPLIST_FILE = "SpaceRun/SpaceRun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B1B3E2418CC2295006839B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceRun/SpaceRun-Prefix.pch";
+				INFOPLIST_FILE = "SpaceRun/SpaceRun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6B1B3E2618CC2295006839B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceRun.app/SpaceRun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceRun/SpaceRun-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpaceRunTests/SpaceRunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6B1B3E2718CC2295006839B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceRun.app/SpaceRun";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpaceRun/SpaceRun-Prefix.pch";
+				INFOPLIST_FILE = "SpaceRunTests/SpaceRunTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1B3DE418CC2295006839B4 /* Build configuration list for PBXProject "SpaceRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B3E2018CC2295006839B4 /* Debug */,
+				6B1B3E2118CC2295006839B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1B3E2218CC2295006839B4 /* Build configuration list for PBXNativeTarget "SpaceRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B3E2318CC2295006839B4 /* Debug */,
+				6B1B3E2418CC2295006839B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B1B3E2518CC2295006839B4 /* Build configuration list for PBXNativeTarget "SpaceRunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B3E2618CC2295006839B4 /* Debug */,
+				6B1B3E2718CC2295006839B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B1B3DE118CC2295006839B4 /* Project object */;
+}
