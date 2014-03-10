@@ -24,6 +24,13 @@
 		6B1B3E1518CC2295006839B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1B3DF018CC2295006839B4 /* UIKit.framework */; };
 		6B1B3E1D18CC2295006839B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E1B18CC2295006839B4 /* InfoPlist.strings */; };
 		6B1B3E1F18CC2295006839B4 /* SpaceRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E1E18CC2295006839B4 /* SpaceRunTests.m */; };
+		6B1B3E2A18CD0F93006839B4 /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E2818CD0F93006839B4 /* asteroid.png */; };
+		6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E2918CD0F93006839B4 /* photon.png */; };
+		6B1B3E3A18CD3B66006839B4 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3818CD3B66006839B4 /* enemy.png */; };
+		6B1B3E3B18CD3B66006839B4 /* powerup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3918CD3B66006839B4 /* powerup.png */; };
+		6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */; };
+		6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */; };
+		6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		6B1B3E1A18CC2295006839B4 /* SpaceRunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRunTests-Info.plist"; sourceTree = "<group>"; };
 		6B1B3E1C18CC2295006839B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B1B3E1E18CC2295006839B4 /* SpaceRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceRunTests.m; sourceTree = "<group>"; };
+		6B1B3E2818CD0F93006839B4 /* asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid.png; sourceTree = "<group>"; };
+		6B1B3E2918CD0F93006839B4 /* photon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photon.png; sourceTree = "<group>"; };
+		6B1B3E3818CD3B66006839B4 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		6B1B3E3918CD3B66006839B4 /* powerup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerup.png; sourceTree = "<group>"; };
+		6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = obstacleExplode.m4a; sourceTree = "<group>"; };
+		6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipExplode.m4a; sourceTree = "<group>"; };
+		6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shoot.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +142,14 @@
 				6B1B3E0418CC2295006839B4 /* RCWViewController.m */,
 				6B1B3E0618CC2295006839B4 /* RCWMyScene.h */,
 				6B1B3E0718CC2295006839B4 /* RCWMyScene.m */,
+				6B1B3E3818CD3B66006839B4 /* enemy.png */,
+				6B1B3E3918CD3B66006839B4 /* powerup.png */,
 				6B1B3E0918CC2295006839B4 /* Spaceship.png */,
+				6B1B3E2818CD0F93006839B4 /* asteroid.png */,
+				6B1B3E2918CD0F93006839B4 /* photon.png */,
+				6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */,
+				6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */,
+				6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */,
 				6B1B3E0B18CC2295006839B4 /* Images.xcassets */,
 				6B1B3DF518CC2295006839B4 /* Supporting Files */,
 			);
@@ -241,10 +262,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1B3E3A18CD3B66006839B4 /* enemy.png in Resources */,
+				6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */,
+				6B1B3E3B18CD3B66006839B4 /* powerup.png in Resources */,
+				6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */,
 				6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */,
 				6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */,
 				6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */,
+				6B1B3E2A18CD0F93006839B4 /* asteroid.png in Resources */,
 				6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */,
+				6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */,
+				6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +505,7 @@
 				6B1B3E2418CC2295006839B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B1B3E2518CC2295006839B4 /* Build configuration list for PBXNativeTarget "SpaceRunTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +514,7 @@
 				6B1B3E2718CC2295006839B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
