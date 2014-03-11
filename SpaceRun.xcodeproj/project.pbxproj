@@ -31,6 +31,13 @@
 		6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */; };
 		6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */; };
 		6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */; };
+		6B1B3E4418CD5AF6006839B4 /* RCWStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */; };
+		6B1B3E6218CEC55F006839B4 /* shootingstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6118CEC55F006839B4 /* shootingstar.png */; };
+		6B1B3E6518CECB66006839B4 /* thrust.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6318CECB66006839B4 /* thrust.sks */; };
+		6B1B3E6618CECB66006839B4 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6418CECB66006839B4 /* spark.png */; };
+		6B1B3E6918CED552006839B4 /* SKEmitterNode+RCWExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */; };
+		6B1B3E6B18CED6F7006839B4 /* obstacleExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */; };
+		6B1B3E6D18CED789006839B4 /* shipExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6C18CED789006839B4 /* shipExplode.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,15 @@
 		6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = obstacleExplode.m4a; sourceTree = "<group>"; };
 		6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipExplode.m4a; sourceTree = "<group>"; };
 		6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shoot.m4a; sourceTree = "<group>"; };
+		6B1B3E4218CD5AF6006839B4 /* RCWStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWStarField.h; sourceTree = "<group>"; };
+		6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWStarField.m; sourceTree = "<group>"; };
+		6B1B3E6118CEC55F006839B4 /* shootingstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootingstar.png; sourceTree = "<group>"; };
+		6B1B3E6318CECB66006839B4 /* thrust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = thrust.sks; sourceTree = "<group>"; };
+		6B1B3E6418CECB66006839B4 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		6B1B3E6718CED552006839B4 /* SKEmitterNode+RCWExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+RCWExtensions.h"; sourceTree = "<group>"; };
+		6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+RCWExtensions.m"; sourceTree = "<group>"; };
+		6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = obstacleExplode.sks; sourceTree = "<group>"; };
+		6B1B3E6C18CED789006839B4 /* shipExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = shipExplode.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +156,13 @@
 				6B1B3E0018CC2295006839B4 /* Main.storyboard */,
 				6B1B3E0318CC2295006839B4 /* RCWViewController.h */,
 				6B1B3E0418CC2295006839B4 /* RCWViewController.m */,
+				6B1B3E4218CD5AF6006839B4 /* RCWStarField.h */,
+				6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */,
 				6B1B3E0618CC2295006839B4 /* RCWMyScene.h */,
 				6B1B3E0718CC2295006839B4 /* RCWMyScene.m */,
+				6B1B3E6718CED552006839B4 /* SKEmitterNode+RCWExtensions.h */,
+				6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */,
+				6B1B3E6118CEC55F006839B4 /* shootingstar.png */,
 				6B1B3E3818CD3B66006839B4 /* enemy.png */,
 				6B1B3E3918CD3B66006839B4 /* powerup.png */,
 				6B1B3E0918CC2295006839B4 /* Spaceship.png */,
@@ -150,6 +171,10 @@
 				6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */,
 				6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */,
 				6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */,
+				6B1B3E6318CECB66006839B4 /* thrust.sks */,
+				6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */,
+				6B1B3E6C18CED789006839B4 /* shipExplode.sks */,
+				6B1B3E6418CECB66006839B4 /* spark.png */,
 				6B1B3E0B18CC2295006839B4 /* Images.xcassets */,
 				6B1B3DF518CC2295006839B4 /* Supporting Files */,
 			);
@@ -265,13 +290,18 @@
 				6B1B3E3A18CD3B66006839B4 /* enemy.png in Resources */,
 				6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */,
 				6B1B3E3B18CD3B66006839B4 /* powerup.png in Resources */,
+				6B1B3E6D18CED789006839B4 /* shipExplode.sks in Resources */,
+				6B1B3E6618CECB66006839B4 /* spark.png in Resources */,
 				6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */,
 				6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */,
 				6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */,
 				6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */,
+				6B1B3E6518CECB66006839B4 /* thrust.sks in Resources */,
 				6B1B3E2A18CD0F93006839B4 /* asteroid.png in Resources */,
+				6B1B3E6218CEC55F006839B4 /* shootingstar.png in Resources */,
 				6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */,
 				6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */,
+				6B1B3E6B18CED6F7006839B4 /* obstacleExplode.sks in Resources */,
 				6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B1B3DFB18CC2295006839B4 /* main.m in Sources */,
+				6B1B3E6918CED552006839B4 /* SKEmitterNode+RCWExtensions.m in Sources */,
 				6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */,
 				6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */,
 				6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */,
+				6B1B3E4418CD5AF6006839B4 /* RCWStarField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

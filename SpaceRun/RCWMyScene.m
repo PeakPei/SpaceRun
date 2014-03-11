@@ -1,3 +1,4 @@
+///////////////////////////////////////////////////////////////////////////////////////
 //
 //  RCWMyScene.m
 //  SpaceRun
@@ -5,8 +6,11 @@
 //  Created by Austin Cherry on 3/8/14.
 //  Copyright (c) 2014 Vluxe. All rights reserved.
 //
+///////////////////////////////////////////////////////////////////////////////////////
 
 #import "RCWMyScene.h"
+#import "RCWStarField.h"
+#import "SKEmitterNode+RCWExtensions.h"
 
 @interface RCWMyScene ()
 @property (nonatomic, weak) UITouch *shipTouch;
@@ -16,16 +20,23 @@
 @property (nonatomic, strong) SKAction *shootSound;
 @property (nonatomic, strong) SKAction *shipExplodeSound;
 @property (nonatomic, strong) SKAction *obstacleExplodeSound;
+@property (nonatomic, strong) SKEmitterNode *shipExplodeTemplate;
+@property (nonatomic, strong) SKEmitterNode *obstacleExplodeTemplate;
 @end
 
 @implementation RCWMyScene
 
+///////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithSize:(CGSize)size
 {
     if (self = [super initWithSize:size])
     {
         self.shipFireRate = 0.5;
         self.backgroundColor = [SKColor blackColor];
+        
+        RCWStarField *starField = [RCWStarField node];
+        [self addChild:starField];
+        
         NSString *name = @"Spaceship.png";
         SKSpriteNode *ship = [SKSpriteNode spriteNodeWithImageNamed:name];
         ship.position = CGPointMake(size.width/2, size.height/2);
@@ -33,13 +44,20 @@
         ship.name = @"ship";
         [self addChild:ship];
         
+        SKEmitterNode *thrust = [SKEmitterNode rcw_nodeWithFile:@"thrust.sks"];
+        thrust.position = CGPointMake(0, -20);
+        [ship addChild:thrust];
+        
         self.shootSound = [SKAction playSoundFileNamed:@"shoot.m4a" waitForCompletion:NO];
         self.obstacleExplodeSound = [SKAction playSoundFileNamed:@"obstacleExplode.m4a" waitForCompletion:NO];
         self.shipExplodeSound = [SKAction playSoundFileNamed:@"shipExplode.m4a" waitForCompletion:NO];
+        
+        self.shipExplodeTemplate = [SKEmitterNode rcw_nodeWithFile:@"shipExplode.sks"];
+        self.obstacleExplodeTemplate = [SKEmitterNode rcw_nodeWithFile:@"obstacleExplode.sks"];
     }
     return self;
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     self.shipTouch = [touches anyObject];
@@ -68,7 +86,7 @@
     
     self.lastUpdateTime = currentTime;
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)moveShipByTimeDelta:(NSTimeInterval)timeDelta
 {
     CGFloat shipSpeed = 130; // points per second
@@ -89,7 +107,7 @@
                                     ship.position.y + yOffset);
     }
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)shoot
 {
     SKNode *ship = [self childNodeWithName:@"ship"];
@@ -107,8 +125,9 @@
     
     [self runAction:self.shootSound];
 }
-
-- (void)dropThing {
+///////////////////////////////////////////////////////////////////////////////////////
+- (void)dropThing
+{
     u_int32_t dice = arc4random_uniform(100);
     if (dice < 5) {
         [self dropPowerup];
@@ -118,7 +137,7 @@
         [self dropAsteroid];
     }
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)dropAsteroid
 {
     CGFloat sideSize = 15 + arc4random_uniform(30);
@@ -150,8 +169,9 @@
     SKAction *all = [SKAction group:@[spinForever, travelAndRemove]];
     [asteroid runAction:all];
 }
-
-- (void)dropEnemyShip {
+///////////////////////////////////////////////////////////////////////////////////////
+- (void)dropEnemyShip
+{
     CGFloat sideSize = 30;
     CGFloat startX = arc4random_uniform(self.size.width-40) + 20;
     CGFloat startY = self.size.height + sideSize;
@@ -176,7 +196,7 @@
     SKAction *all = [SKAction sequence:@[followPath, remove]];
     [enemy runAction:all];
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)dropPowerup
 {
     CGFloat sideSize = 30;
@@ -199,7 +219,7 @@
     SKAction *all = [SKAction group:@[spinForever, travelAndRemove]];
     [powerup runAction:all];
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (CGPathRef)buildEnemyShipMovementPath
 {
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
@@ -234,7 +254,7 @@
     
     return bezierPath.CGPath;
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)checkCollisions
 {
     SKNode *ship = [self childNodeWithName:@"ship"];
@@ -265,6 +285,11 @@
              [ship removeFromParent];
              [obstacle removeFromParent];
              [self runAction:self.shipExplodeSound];
+             
+             SKEmitterNode *explosion = [self.shipExplodeTemplate copy];
+             explosion.position = ship.position;
+             [explosion rcw_dieOutInDuration:0.3];
+             [self addChild:explosion];
          }
          
          [self
@@ -274,10 +299,16 @@
                   [photon removeFromParent];
                   [obstacle removeFromParent];
                   [self runAction:self.obstacleExplodeSound];
+                  
+                  SKEmitterNode *explosion = [self.obstacleExplodeTemplate copy];
+                  explosion.position = obstacle.position;
+                  [explosion rcw_dieOutInDuration:0.1];
+                  [self addChild:explosion];
+                  
                   *stop = YES;
               }
           }];
      }];
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 @end
