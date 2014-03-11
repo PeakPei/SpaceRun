@@ -13,4 +13,6 @@
 
 @interface RCWViewController : UIViewController
 
+@property (nonatomic) BOOL easyMode;
+
 @end

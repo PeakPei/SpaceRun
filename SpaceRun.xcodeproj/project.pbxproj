@@ -14,7 +14,6 @@
 		6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3DF718CC2295006839B4 /* InfoPlist.strings */; };
 		6B1B3DFB18CC2295006839B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3DFA18CC2295006839B4 /* main.m */; };
 		6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */; };
-		6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0018CC2295006839B4 /* Main.storyboard */; };
 		6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0418CC2295006839B4 /* RCWViewController.m */; };
 		6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0718CC2295006839B4 /* RCWMyScene.m */; };
 		6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E0918CC2295006839B4 /* Spaceship.png */; };
@@ -38,6 +37,11 @@
 		6B1B3E6918CED552006839B4 /* SKEmitterNode+RCWExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */; };
 		6B1B3E6B18CED6F7006839B4 /* obstacleExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */; };
 		6B1B3E6D18CED789006839B4 /* shipExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6C18CED789006839B4 /* shipExplode.sks */; };
+		6B1B3E6F18CF69B8006839B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6E18CF69B8006839B4 /* Main.storyboard */; };
+		6B1B3E7218CF6A46006839B4 /* RCWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7118CF6A46006839B4 /* RCWMenuViewController.m */; };
+		6B1B3E7418CF6DD4006839B4 /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7318CF6DD4006839B4 /* shoot.mp3 */; };
+		6B1B3E7718CF7A7C006839B4 /* RCWOpeningScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */; };
+		6B1B3E7A18CF7ED7006839B4 /* RCWGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +66,6 @@
 		6B1B3DFC18CC2295006839B4 /* SpaceRun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceRun-Prefix.pch"; sourceTree = "<group>"; };
 		6B1B3DFD18CC2295006839B4 /* RCWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWAppDelegate.h; sourceTree = "<group>"; };
 		6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWAppDelegate.m; sourceTree = "<group>"; };
-		6B1B3E0118CC2295006839B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B1B3E0318CC2295006839B4 /* RCWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWViewController.h; sourceTree = "<group>"; };
 		6B1B3E0418CC2295006839B4 /* RCWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCWViewController.m; sourceTree = "<group>"; };
 		6B1B3E0618CC2295006839B4 /* RCWMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCWMyScene.h; sourceTree = "<group>"; };
@@ -90,6 +93,14 @@
 		6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+RCWExtensions.m"; sourceTree = "<group>"; };
 		6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = obstacleExplode.sks; sourceTree = "<group>"; };
 		6B1B3E6C18CED789006839B4 /* shipExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = shipExplode.sks; sourceTree = "<group>"; };
+		6B1B3E6E18CF69B8006839B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6B1B3E7018CF6A46006839B4 /* RCWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWMenuViewController.h; sourceTree = "<group>"; };
+		6B1B3E7118CF6A46006839B4 /* RCWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWMenuViewController.m; sourceTree = "<group>"; };
+		6B1B3E7318CF6DD4006839B4 /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
+		6B1B3E7518CF7A7C006839B4 /* RCWOpeningScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWOpeningScene.h; sourceTree = "<group>"; };
+		6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWOpeningScene.m; sourceTree = "<group>"; };
+		6B1B3E7818CF7ED7006839B4 /* RCWGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWGameOverNode.h; sourceTree = "<group>"; };
+		6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWGameOverNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,17 +162,23 @@
 		6B1B3DF418CC2295006839B4 /* SpaceRun */ = {
 			isa = PBXGroup;
 			children = (
+				6B1B3E6E18CF69B8006839B4 /* Main.storyboard */,
 				6B1B3DFD18CC2295006839B4 /* RCWAppDelegate.h */,
 				6B1B3DFE18CC2295006839B4 /* RCWAppDelegate.m */,
-				6B1B3E0018CC2295006839B4 /* Main.storyboard */,
 				6B1B3E0318CC2295006839B4 /* RCWViewController.h */,
 				6B1B3E0418CC2295006839B4 /* RCWViewController.m */,
+				6B1B3E7018CF6A46006839B4 /* RCWMenuViewController.h */,
+				6B1B3E7118CF6A46006839B4 /* RCWMenuViewController.m */,
 				6B1B3E4218CD5AF6006839B4 /* RCWStarField.h */,
 				6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */,
 				6B1B3E0618CC2295006839B4 /* RCWMyScene.h */,
 				6B1B3E0718CC2295006839B4 /* RCWMyScene.m */,
+				6B1B3E7518CF7A7C006839B4 /* RCWOpeningScene.h */,
+				6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */,
 				6B1B3E6718CED552006839B4 /* SKEmitterNode+RCWExtensions.h */,
 				6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */,
+				6B1B3E7818CF7ED7006839B4 /* RCWGameOverNode.h */,
+				6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */,
 				6B1B3E6118CEC55F006839B4 /* shootingstar.png */,
 				6B1B3E3818CD3B66006839B4 /* enemy.png */,
 				6B1B3E3918CD3B66006839B4 /* powerup.png */,
@@ -171,6 +188,7 @@
 				6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */,
 				6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */,
 				6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */,
+				6B1B3E7318CF6DD4006839B4 /* shoot.mp3 */,
 				6B1B3E6318CECB66006839B4 /* thrust.sks */,
 				6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */,
 				6B1B3E6C18CED789006839B4 /* shipExplode.sks */,
@@ -293,13 +311,14 @@
 				6B1B3E6D18CED789006839B4 /* shipExplode.sks in Resources */,
 				6B1B3E6618CECB66006839B4 /* spark.png in Resources */,
 				6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */,
+				6B1B3E6F18CF69B8006839B4 /* Main.storyboard in Resources */,
 				6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */,
 				6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */,
 				6B1B3E0A18CC2295006839B4 /* Spaceship.png in Resources */,
 				6B1B3E6518CECB66006839B4 /* thrust.sks in Resources */,
 				6B1B3E2A18CD0F93006839B4 /* asteroid.png in Resources */,
+				6B1B3E7418CF6DD4006839B4 /* shoot.mp3 in Resources */,
 				6B1B3E6218CEC55F006839B4 /* shootingstar.png in Resources */,
-				6B1B3E0218CC2295006839B4 /* Main.storyboard in Resources */,
 				6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */,
 				6B1B3E6B18CED6F7006839B4 /* obstacleExplode.sks in Resources */,
 				6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */,
@@ -325,7 +344,10 @@
 				6B1B3E6918CED552006839B4 /* SKEmitterNode+RCWExtensions.m in Sources */,
 				6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */,
 				6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */,
+				6B1B3E7218CF6A46006839B4 /* RCWMenuViewController.m in Sources */,
 				6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */,
+				6B1B3E7718CF7A7C006839B4 /* RCWOpeningScene.m in Sources */,
+				6B1B3E7A18CF7ED7006839B4 /* RCWGameOverNode.m in Sources */,
 				6B1B3E4418CD5AF6006839B4 /* RCWStarField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +377,6 @@
 				6B1B3DF818CC2295006839B4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6B1B3E0018CC2295006839B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B1B3E0118CC2295006839B4 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6B1B3E1B18CC2295006839B4 /* InfoPlist.strings */ = {

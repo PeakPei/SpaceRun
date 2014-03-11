@@ -11,4 +11,7 @@
 
 @interface RCWMyScene : SKScene
 
+@property (nonatomic, copy) dispatch_block_t endGameCallback;
+@property (nonatomic) BOOL easyMode;
+
 @end

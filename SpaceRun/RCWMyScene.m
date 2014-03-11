@@ -11,8 +11,10 @@
 #import "RCWMyScene.h"
 #import "RCWStarField.h"
 #import "SKEmitterNode+RCWExtensions.h"
+#import "RCWGameOverNode.h"
 
 @interface RCWMyScene ()
+
 @property (nonatomic, weak) UITouch *shipTouch;
 @property (nonatomic) NSTimeInterval lastUpdateTime;
 @property (nonatomic) NSTimeInterval lastShotFireTime;
@@ -22,6 +24,8 @@
 @property (nonatomic, strong) SKAction *obstacleExplodeSound;
 @property (nonatomic, strong) SKEmitterNode *shipExplodeTemplate;
 @property (nonatomic, strong) SKEmitterNode *obstacleExplodeTemplate;
+@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
+
 @end
 
 @implementation RCWMyScene
@@ -48,7 +52,7 @@
         thrust.position = CGPointMake(0, -20);
         [ship addChild:thrust];
         
-        self.shootSound = [SKAction playSoundFileNamed:@"shoot.m4a" waitForCompletion:NO];
+        self.shootSound = [SKAction playSoundFileNamed:@"shoot.mp3" waitForCompletion:NO];
         self.obstacleExplodeSound = [SKAction playSoundFileNamed:@"obstacleExplode.m4a" waitForCompletion:NO];
         self.shipExplodeSound = [SKAction playSoundFileNamed:@"shipExplode.m4a" waitForCompletion:NO];
         
@@ -62,7 +66,7 @@
 {
     self.shipTouch = [touches anyObject];
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 - (void)update:(NSTimeInterval)currentTime
 {
     if (self.lastUpdateTime == 0)
@@ -79,8 +83,16 @@
         }
     }
     
-    if (arc4random_uniform(1000) <= 15)
+    NSInteger thingProbability;
+    if (self.easyMode) {
+        thingProbability = 15;
+    } else {
+        thingProbability = 30;
+    }
+    
+    if (arc4random_uniform(1000) <= thingProbability) {
         [self dropThing];
+    }
     
     [self checkCollisions];
     
@@ -290,6 +302,8 @@
              explosion.position = ship.position;
              [explosion rcw_dieOutInDuration:0.3];
              [self addChild:explosion];
+             
+             [self endGame];
          }
          
          [self
@@ -311,4 +325,28 @@
      }];
 }
 ///////////////////////////////////////////////////////////////////////////////////////
+- (void)endGame
+{
+    self.tapGesture = [[UITapGestureRecognizer alloc]
+                       initWithTarget:self action:@selector(tapped)];
+    [self.view addGestureRecognizer:self.tapGesture];
+    
+    RCWGameOverNode *node = [RCWGameOverNode node];
+    node.position = CGPointMake(self.size.width / 2, self.size.height / 2);
+    [self addChild:node];
+}
+///////////////////////////////////////////////////////////////////////////////////////
+- (void)tapped
+{
+    NSAssert(self.endGameCallback, @"Forgot to set the endGameCallback");
+    self.endGameCallback();
+}
+///////////////////////////////////////////////////////////////////////////////////////
+- (void)willMoveFromView:(SKView *)view
+{
+    [self.view removeGestureRecognizer:self.tapGesture];
+    self.tapGesture = nil;
+}
+///////////////////////////////////////////////////////////////////////////////////////
+
 @end
