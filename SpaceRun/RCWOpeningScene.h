@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  RCWOpeningScene.h
+//  SpaceRun
+//
+//  Created by Austin Cherry on 3/11/14.
+//  Copyright (c) 2014 Vluxe. All rights reserved.
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#import <SpriteKit/SpriteKit.h>
+
+@interface RCWOpeningScene : SKScene
+
+@property (nonatomic, copy) dispatch_block_t sceneEndCallback;
+
+@end
