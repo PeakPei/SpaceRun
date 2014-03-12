@@ -16,11 +16,28 @@
 
 @property (nonatomic, strong) IBOutlet UISegmentedControl *difficultyChooser;
 @property (nonatomic, strong) SKView *demoView;
+@property (nonatomic, strong) IBOutlet UILabel *highScoreLabel;
 
 @end
 
 @implementation RCWMenuViewController
 
+///////////////////////////////////////////////////////////////////////////////////////
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    NSNumberFormatter *scoreFormatter = [[NSNumberFormatter alloc] init];
+    scoreFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults registerDefaults:@{@"highScore": @0}];
+    NSNumber *score = [defaults valueForKey:@"highScore"];
+    NSString *scoreText = [NSString stringWithFormat:@"High Score: %@",
+                           [scoreFormatter stringFromNumber:score]];
+    
+    self.highScoreLabel.text = scoreText;
+}
 ///////////////////////////////////////////////////////////////////////////////////////
 - (void)viewDidAppear:(BOOL)animated
 {

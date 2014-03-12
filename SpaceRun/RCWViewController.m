@@ -32,12 +32,7 @@
     RCWMyScene *scene = [RCWMyScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     scene.easyMode = self.easyMode;
-    
-    __weak RCWViewController *weakSelf = self;
-    scene.endGameCallback = ^{
-        [weakSelf.navigationController popViewControllerAnimated:YES];
-    };
-    
+        
     // Present the scene.
     [skView presentScene:scene];
 }

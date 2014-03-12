@@ -12,6 +12,7 @@
 #import "RCWStarField.h"
 #import "SKEmitterNode+RCWExtensions.h"
 #import "RCWGameOverNode.h"
+#import "RCWHUDNode.h"
 
 @interface RCWMyScene ()
 
@@ -58,6 +59,15 @@
         
         self.shipExplodeTemplate = [SKEmitterNode rcw_nodeWithFile:@"shipExplode.sks"];
         self.obstacleExplodeTemplate = [SKEmitterNode rcw_nodeWithFile:@"obstacleExplode.sks"];
+        
+        RCWHUDNode *hudNode = [RCWHUDNode node];
+        hudNode.name = @"hud";
+        hudNode.zPosition = 100;
+        hudNode.position = CGPointMake(size.width/2, size.height/2);
+        [self addChild:hudNode];
+        
+        [hudNode layoutForScene];
+        [hudNode startGame];
     }
     return self;
 }
@@ -73,11 +83,12 @@
         self.lastUpdateTime = currentTime;
         
     NSTimeInterval timeDelta = currentTime - self.lastUpdateTime;
-    if (self.shipTouch)
-    {
-        [self moveShipByTimeDelta:timeDelta];
-        if (currentTime - self.lastShotFireTime > self.shipFireRate)
-        {
+    
+    if (self.shipTouch) {
+        [self moveShipTowardPoint:[self.shipTouch locationInNode:self]
+                      byTimeDelta:timeDelta];
+        
+        if (currentTime - self.lastShotFireTime > self.shipFireRate) {
             [self shoot];
             self.lastShotFireTime = currentTime;
         }
@@ -99,19 +110,18 @@
     self.lastUpdateTime = currentTime;
 }
 ///////////////////////////////////////////////////////////////////////////////////////
-- (void)moveShipByTimeDelta:(NSTimeInterval)timeDelta
+- (void)moveShipTowardPoint:(CGPoint)point byTimeDelta:(NSTimeInterval)timeDelta
 {
     CGFloat shipSpeed = 130; // points per second
     SKNode *ship = [self childNodeWithName:@"ship"];
-    CGPoint dest = [self.shipTouch locationInNode:self];
-    CGFloat distanceLeft = sqrt(pow(ship.position.x - dest.x, 2) +
-                                pow(ship.position.y - dest.y, 2));
+    CGFloat distanceLeft = sqrt(pow(ship.position.x - point.x, 2) +
+                                pow(ship.position.y - point.y, 2));
     
     if (distanceLeft > 4) {
         CGFloat distanceToTravel = timeDelta * shipSpeed;
         
-        CGFloat angle = atan2(dest.x - ship.position.x,
-                              dest.y - ship.position.y);
+        CGFloat angle = atan2(point.x - ship.position.x,
+                              point.y - ship.position.y);
         CGFloat yOffset = distanceToTravel * cos(angle);
         CGFloat xOffset = distanceToTravel * sin(angle);
         
@@ -123,6 +133,8 @@
 - (void)shoot
 {
     SKNode *ship = [self childNodeWithName:@"ship"];
+    if(!ship)
+        return;
     
     SKSpriteNode *photon = [SKSpriteNode spriteNodeWithImageNamed:@"photon"];
     photon.name = @"photon";
@@ -278,6 +290,9 @@
              [powerup removeFromParent];
              self.shipFireRate = 0.1;
              
+             RCWHUDNode *hud = (RCWHUDNode *)[self childNodeWithName:@"hud"];
+             [hud showPowerupTimer:5];
+             
              SKAction *powerdown = [SKAction runBlock:^{
                  self.shipFireRate = 0.5;
              }];
@@ -319,6 +334,10 @@
                   [explosion rcw_dieOutInDuration:0.1];
                   [self addChild:explosion];
                   
+                  RCWHUDNode *hud = (RCWHUDNode *)[self childNodeWithName:@"hud"];
+                  NSInteger score = 10 * hud.elapsedTime * (self.easyMode ? 1 : 2);
+                  [hud addPoints:score];
+                  
                   *stop = YES;
               }
           }];
@@ -334,6 +353,16 @@
     RCWGameOverNode *node = [RCWGameOverNode node];
     node.position = CGPointMake(self.size.width / 2, self.size.height / 2);
     [self addChild:node];
+    
+    RCWHUDNode *hud = (RCWHUDNode *)[self childNodeWithName:@"hud"];
+    [hud endGame];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *highScore = [defaults valueForKey:@"highScore"];
+    if (highScore.integerValue < hud.score) {
+        [defaults setValue:@(hud.score) forKey:@"highScore"];
+        [defaults synchronize]; // added, chapter 5. Need to update.
+    }
 }
 ///////////////////////////////////////////////////////////////////////////////////////
 - (void)tapped

@@ -42,6 +42,7 @@
 		6B1B3E7418CF6DD4006839B4 /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7318CF6DD4006839B4 /* shoot.mp3 */; };
 		6B1B3E7718CF7A7C006839B4 /* RCWOpeningScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */; };
 		6B1B3E7A18CF7ED7006839B4 /* RCWGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */; };
+		6B24DACA18CFD6A5007EFD40 /* RCWHUDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B24DAC918CFD6A5007EFD40 /* RCWHUDNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWOpeningScene.m; sourceTree = "<group>"; };
 		6B1B3E7818CF7ED7006839B4 /* RCWGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWGameOverNode.h; sourceTree = "<group>"; };
 		6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWGameOverNode.m; sourceTree = "<group>"; };
+		6B24DAC818CFD6A5007EFD40 /* RCWHUDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWHUDNode.h; sourceTree = "<group>"; };
+		6B24DAC918CFD6A5007EFD40 /* RCWHUDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWHUDNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				6B1B3E6818CED552006839B4 /* SKEmitterNode+RCWExtensions.m */,
 				6B1B3E7818CF7ED7006839B4 /* RCWGameOverNode.h */,
 				6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */,
+				6B24DAC818CFD6A5007EFD40 /* RCWHUDNode.h */,
+				6B24DAC918CFD6A5007EFD40 /* RCWHUDNode.m */,
 				6B1B3E6118CEC55F006839B4 /* shootingstar.png */,
 				6B1B3E3818CD3B66006839B4 /* enemy.png */,
 				6B1B3E3918CD3B66006839B4 /* powerup.png */,
@@ -344,6 +349,7 @@
 				6B1B3E6918CED552006839B4 /* SKEmitterNode+RCWExtensions.m in Sources */,
 				6B1B3E0518CC2295006839B4 /* RCWViewController.m in Sources */,
 				6B1B3DFF18CC2295006839B4 /* RCWAppDelegate.m in Sources */,
+				6B24DACA18CFD6A5007EFD40 /* RCWHUDNode.m in Sources */,
 				6B1B3E7218CF6A46006839B4 /* RCWMenuViewController.m in Sources */,
 				6B1B3E0818CC2295006839B4 /* RCWMyScene.m in Sources */,
 				6B1B3E7718CF7A7C006839B4 /* RCWOpeningScene.m in Sources */,
