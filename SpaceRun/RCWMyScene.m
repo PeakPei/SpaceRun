@@ -54,7 +54,7 @@
         [ship addChild:thrust];
         
         self.shootSound = [SKAction playSoundFileNamed:@"shoot.mp3" waitForCompletion:NO];
-        self.obstacleExplodeSound = [SKAction playSoundFileNamed:@"obstacleExplode.m4a" waitForCompletion:NO];
+        self.obstacleExplodeSound = [SKAction playSoundFileNamed:@"explode.m4a" waitForCompletion:NO];
         self.shipExplodeSound = [SKAction playSoundFileNamed:@"shipExplode.m4a" waitForCompletion:NO];
         
         self.shipExplodeTemplate = [SKEmitterNode rcw_nodeWithFile:@"shipExplode.sks"];

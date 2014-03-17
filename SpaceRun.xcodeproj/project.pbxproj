@@ -27,9 +27,6 @@
 		6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E2918CD0F93006839B4 /* photon.png */; };
 		6B1B3E3A18CD3B66006839B4 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3818CD3B66006839B4 /* enemy.png */; };
 		6B1B3E3B18CD3B66006839B4 /* powerup.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3918CD3B66006839B4 /* powerup.png */; };
-		6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */; };
-		6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */; };
-		6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */; };
 		6B1B3E4418CD5AF6006839B4 /* RCWStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */; };
 		6B1B3E6218CEC55F006839B4 /* shootingstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6118CEC55F006839B4 /* shootingstar.png */; };
 		6B1B3E6518CECB66006839B4 /* thrust.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B3E6318CECB66006839B4 /* thrust.sks */; };
@@ -43,6 +40,8 @@
 		6B1B3E7718CF7A7C006839B4 /* RCWOpeningScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7618CF7A7C006839B4 /* RCWOpeningScene.m */; };
 		6B1B3E7A18CF7ED7006839B4 /* RCWGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */; };
 		6B24DACA18CFD6A5007EFD40 /* RCWHUDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B24DAC918CFD6A5007EFD40 /* RCWHUDNode.m */; };
+		6BF5354118D6BEE300B8D5D9 /* explode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6BF5354018D6BEE300B8D5D9 /* explode.m4a */; };
+		6BF5354318D6BFBA00B8D5D9 /* shipExplode.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6BF5354218D6BFBA00B8D5D9 /* shipExplode.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,9 +81,6 @@
 		6B1B3E2918CD0F93006839B4 /* photon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photon.png; sourceTree = "<group>"; };
 		6B1B3E3818CD3B66006839B4 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
 		6B1B3E3918CD3B66006839B4 /* powerup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerup.png; sourceTree = "<group>"; };
-		6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = obstacleExplode.m4a; sourceTree = "<group>"; };
-		6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipExplode.m4a; sourceTree = "<group>"; };
-		6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shoot.m4a; sourceTree = "<group>"; };
 		6B1B3E4218CD5AF6006839B4 /* RCWStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWStarField.h; sourceTree = "<group>"; };
 		6B1B3E4318CD5AF6006839B4 /* RCWStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWStarField.m; sourceTree = "<group>"; };
 		6B1B3E6118CEC55F006839B4 /* shootingstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootingstar.png; sourceTree = "<group>"; };
@@ -104,6 +100,8 @@
 		6B1B3E7918CF7ED7006839B4 /* RCWGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWGameOverNode.m; sourceTree = "<group>"; };
 		6B24DAC818CFD6A5007EFD40 /* RCWHUDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCWHUDNode.h; sourceTree = "<group>"; };
 		6B24DAC918CFD6A5007EFD40 /* RCWHUDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCWHUDNode.m; sourceTree = "<group>"; };
+		6BF5354018D6BEE300B8D5D9 /* explode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = explode.m4a; sourceTree = "<group>"; };
+		6BF5354218D6BFBA00B8D5D9 /* shipExplode.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = shipExplode.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +188,8 @@
 				6B1B3E0918CC2295006839B4 /* Spaceship.png */,
 				6B1B3E2818CD0F93006839B4 /* asteroid.png */,
 				6B1B3E2918CD0F93006839B4 /* photon.png */,
-				6B1B3E3C18CD3CA4006839B4 /* obstacleExplode.m4a */,
-				6B1B3E3D18CD3CA4006839B4 /* shipExplode.m4a */,
-				6B1B3E3E18CD3CA4006839B4 /* shoot.m4a */,
+				6BF5354218D6BFBA00B8D5D9 /* shipExplode.m4a */,
+				6BF5354018D6BEE300B8D5D9 /* explode.m4a */,
 				6B1B3E7318CF6DD4006839B4 /* shoot.mp3 */,
 				6B1B3E6318CECB66006839B4 /* thrust.sks */,
 				6B1B3E6A18CED6F7006839B4 /* obstacleExplode.sks */,
@@ -311,11 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B1B3E3A18CD3B66006839B4 /* enemy.png in Resources */,
-				6B1B3E4118CD3CA4006839B4 /* shoot.m4a in Resources */,
+				6BF5354118D6BEE300B8D5D9 /* explode.m4a in Resources */,
 				6B1B3E3B18CD3B66006839B4 /* powerup.png in Resources */,
 				6B1B3E6D18CED789006839B4 /* shipExplode.sks in Resources */,
+				6BF5354318D6BFBA00B8D5D9 /* shipExplode.m4a in Resources */,
 				6B1B3E6618CECB66006839B4 /* spark.png in Resources */,
-				6B1B3E4018CD3CA4006839B4 /* shipExplode.m4a in Resources */,
 				6B1B3E6F18CF69B8006839B4 /* Main.storyboard in Resources */,
 				6B1B3DF918CC2295006839B4 /* InfoPlist.strings in Resources */,
 				6B1B3E0C18CC2295006839B4 /* Images.xcassets in Resources */,
@@ -324,7 +321,6 @@
 				6B1B3E2A18CD0F93006839B4 /* asteroid.png in Resources */,
 				6B1B3E7418CF6DD4006839B4 /* shoot.mp3 in Resources */,
 				6B1B3E6218CEC55F006839B4 /* shootingstar.png in Resources */,
-				6B1B3E3F18CD3CA4006839B4 /* obstacleExplode.m4a in Resources */,
 				6B1B3E6B18CED6F7006839B4 /* obstacleExplode.sks in Resources */,
 				6B1B3E2B18CD0F93006839B4 /* photon.png in Resources */,
 			);
